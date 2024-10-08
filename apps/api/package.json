@@ -1,0 +1,26 @@
+{
+  "name": "@apps/api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:cors",
+    "start": "node dist/index.js",
+    "type-check": "tsc"
+  },
+  "keywords": [],
+  "author": "shantanu kulkarni",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@mono/types": "workspace:^",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.3"
+  }
+}
